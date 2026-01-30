@@ -1,0 +1,23 @@
+# Dependency yang ukurannya gaban
+node_modules/
+
+# Hasil build/produksi (folder yang isinya file CSS mateng)
+dist/
+build/
+.cache/
+
+# File konfigurasi lokal atau rahasia
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Log kalau ada error (biar gak nyampah)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# File sampah dari OS
+.DS_Store
+Thumbs.db
