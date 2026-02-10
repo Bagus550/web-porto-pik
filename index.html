@@ -233,9 +233,10 @@
             </div>
 
             <p class="text-gray-700 leading-relaxed text-sm md:text-base text-justify border-l-4 border-blue-600 pl-4">
-              Sistem ini dirancang untuk mengintegrasikan database <strong>MS Access</strong> dengan <strong>Excel
-                Dashboard</strong> guna menghasilkan laporan otomatis. Meminimalisir kesalahan input manual hingga 90%
-              menggunakan <em>complex formulas</em> dan <em>relational data</em>.
+              Sistem ini dirancang untuk mentransformasi data transaksi mentah menjadi informasi strategis secara
+              otomatis. Melalui arsitektur <em>Database-to-Dashboard</em>, setiap input transaksi di MS Access langsung
+              diolah oleh Excel menggunakan logika Measure untuk menghasilkan laporan stok akhir, histori mutasi, dan
+              analisis visual tanpa proses manual tambahan.
             </p>
 
             <div class="bg-white p-5 border-2 border-black shadow-[6px_6px_0px_0px_rgba(37,99,235,1)]">
@@ -243,24 +244,16 @@
                 <span class="w-2 h-2 bg-blue-600"></span> Technical Specs:
               </h4>
               <ul class="text-xs md:text-sm text-gray-700 space-y-4 font-bold uppercase tracking-tight">
-                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Excel Logic:
-                    VLOOKUP, INDEX-MATCH, Pivot</span></li>
-                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Database:
-                    Relational (MS Access)</span></li>
-                <li class="flex items-start gap-2"><span>✔</span> <span>Presentation: Dynamic Chart & Dashboard</span>
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Data Modeling &
+                    Logic:
+                    Power Pivot, DAX (Data Analysis Expressions)</span></li>
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Database
+                    Management:
+                    MS Access as Back-End Storage, Relational Database Design, Automated Data Syncing.</span></li>
+                <li class="flex items-start gap-2"><span>✔</span> <span>Advanced Presentation: Dynamic Chart &
+                    Dashboard</span>
                 </li>
               </ul>
-            </div>
-
-            <div class="flex gap-4">
-              <a href="#"
-                class="bg-blue-600 text-white border-2 border-black px-6 py-2 text-xs font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
-                View Demo
-              </a>
-              <a href="#"
-                class="bg-white text-black border-2 border-black px-6 py-2 text-xs font-black uppercase shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all">
-                Technical Doc
-              </a>
             </div>
           </div>
 
@@ -271,7 +264,7 @@
                 class="relative bg-white p-4 border-2 border-black transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
                 <div
                   class="aspect-video bg-gray-50 border-2 border-gray-100 flex flex-col items-center justify-center overflow-hidden">
-                  <img src="/src/img/preview-excel.png" alt="Excel Project" class="object-cover w-full h-full" />
+                  <img src="/src/img/dashboard-1.png" alt="Excel Project" class="object-contain w-full h-full" />
                 </div>
                 <div
                   class="mt-4 flex justify-between items-center border-t border-gray-100 pt-4 font-mono text-[10px] uppercase">
@@ -279,6 +272,154 @@
                   <span class="text-white bg-blue-700 px-2 py-0.5 font-black italic shadow-sm">VERIFIED</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-15 items-start">
+          <div class="order-2 lg:order-1 space-y-6">
+            <div class="space-y-2 text-center lg:text-left">
+              <h3
+                class="text-2xl md:text-3xl font-black text-black leading-none uppercase tracking-tighter italic underline decoration-red-600">
+                Database Management</h3>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed text-sm md:text-base text-justify border-l-4 border-red-600 pl-4">
+              Menggunakan MS Access sebagai Database Engine untuk pengelolaan data transaksi yang lebih terstruktur.
+              Sistem ini menghubungkan Tabel Master dan Tabel Transaksi secara relasional, menghilangkan redundansi
+              data, dan mempermudah pemeliharaan database dalam jangka panjang.
+            </p>
+
+            <div class="bg-white p-5 border-2 border-black shadow-[6px_6px_0px_0px_rgba(220,38,38,1)]">
+              <ul class="text-xs md:text-sm text-gray-700 space-y-4 font-bold uppercase tracking-tight">
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Back-End Storage:
+                    MS Access (ACCDB format)</span></li>
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Zero Redundancy:
+                    Normalisasi Data Master</span></li>
+                <li class="flex items-start gap-2"><span>✔</span> <span>Sync Capability: Power Query Integration</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="order-1 lg:order-2 grid grid-cols-1 gap-6">
+            <div class="relative group">
+              <div class="absolute inset-0 bg-black translate-x-2 translate-y-2"></div>
+              <div class="relative bg-white p-3 border-2 border-black transition-transform group-hover:-translate-y-1">
+                <div class="aspect-video overflow-hidden border-b-2 border-black mb-2">
+                  <img src="/src/img/tabel-master.png" class="object-contain w-full h-full" />
+                </div>
+                <p class="font-mono text-[9px] font-bold italic text-blue-600">Tabel Master</p>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <div class="absolute inset-0 bg-red-600 translate-x-2 translate-y-2"></div>
+              <div class="relative bg-white p-3 border-2 border-black transition-transform group-hover:-translate-y-1">
+                <div class="aspect-video overflow-hidden border-b-2 border-black mb-2">
+                  <img src="/src/img/tabel-transaksi.png" class="object-contain w-full h-full" />
+                </div>
+                <p class="font-mono text-[9px] font-bold italic text-black">Tabel Transaksi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-15 items-start">
+          <div class="order-1 lg:order-2 grid grid-cols-1 gap-6">
+            <div class="relative group">
+              <div class="absolute inset-0 bg-black translate-x-2 translate-y-2"></div>
+              <div class="relative bg-white p-3 border-2 border-black transition-transform group-hover:-translate-y-1">
+                <div class="aspect-video overflow-hidden border-b-2 border-black mb-2">
+                  <img src="/src/img/tabel-master-excel.png" class="object-contain w-full h-full" />
+                </div>
+                <p class="font-mono text-[9px] font-bold italic text-blue-600">Tabel Master</p>
+              </div>
+            </div>
+
+            <div class="relative group">
+              <div class="absolute inset-0 bg-green-600 translate-x-2 translate-y-2"></div>
+              <div class="relative bg-white p-3 border-2 border-black transition-transform group-hover:-translate-y-1">
+                <div class="aspect-video overflow-hidden border-b-2 border-black mb-2">
+                  <img src="/src/img/tabel-transaksi-excel.png" class="object-contain w-full h-full" />
+                </div>
+                <p class="font-mono text-[9px] font-bold italic text-black">Tabel Transaksi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-2 space-y-6">
+            <div class="space-y-2 text-center lg:text-left">
+              <h3
+                class="text-2xl md:text-3xl font-black text-black leading-none uppercase tracking-tighter italic underline decoration-green-600">
+                Data Integration
+              </h3>
+            </div>
+
+            <p class="text-gray-700 leading-relaxed text-sm md:text-base text-justify border-l-4 border-green-600 pl-4">
+              Menghubungkan Database MS Access dengan Excel menggunakan engine <strong>Power Query</strong>.
+              Teknik ini memungkinkan pengambilan data secara <em>real-time</em> tanpa perlu melakukan input ganda,
+              sehingga meminimalisir risiko kesalahan manusia dan memastikan sinkronisasi data yang efisien.
+            </p>
+
+            <div class="bg-white p-5 border-2 border-black shadow-[6px_6px_0px_0px_rgba(22,163,74,1)]">
+              <ul class="text-xs md:text-sm text-gray-700 space-y-4 font-bold uppercase tracking-tight">
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Automated Refresh:
+                    One-Click Update</span></li>
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Power Query ETL:
+                    Extract & Transform</span></li>
+                <li class="flex items-start gap-2"><span>✔</span> <span>Scalable Connection: Handles Large Data</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 pt-15 items-start">
+
+          <div class="order-1">
+            <div class="relative group">
+              <div class="absolute inset-0 bg-violet-600 translate-x-2 translate-y-2"></div>
+              <div
+                class="relative bg-white p-4 border-2 border-black transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1">
+                <div
+                  class="aspect-video bg-gray-50 border-2 border-gray-100 flex items-center justify-center overflow-hidden">
+                  <img src="/src/img/dashboard-1.png" alt="Dynamic Dashboard" class="object-contain w-full h-full" />
+                </div>
+                <div
+                  class="mt-4 flex justify-between items-center border-t border-gray-100 pt-4 font-mono text-[10px] uppercase">
+                  <span class="font-bold text-black">Front-End: Executive View</span>
+                  <span class="text-white bg-violet-700 px-2 py-0.5 font-black italic shadow-sm">INTERACTIVE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="order-2 space-y-6">
+            <div class="space-y-2 text-center lg:text-left">
+              <h3
+                class="text-2xl md:text-3xl font-black text-black leading-none uppercase tracking-tighter italic underline decoration-violet-600">
+                Data Interface
+              </h3>
+            </div>
+
+            <p
+              class="text-gray-700 leading-relaxed text-sm md:text-base text-justify border-l-4 border-violet-600 pl-4">
+              Menyajikan informasi melalui <strong>Dynamic Charts</strong> dan <strong>Pivot Tables</strong> yang
+              interaktif.
+              Antarmuka ini dirancang untuk memudahkan pengambilan keputusan dengan sistem filter cepat (Slicers)
+              yang memungkinkan pemantauan stok secara spesifik berdasarkan kategori atau periode waktu tertentu.
+            </p>
+
+            <div class="bg-white p-5 border-2 border-black shadow-[6px_6px_0px_0px_rgba(124,58,237,1)]">
+              <ul class="text-xs md:text-sm text-gray-700 space-y-4 font-bold uppercase tracking-tight">
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Automated Refresh:
+                    One-Click Update</span></li>
+                <li class="flex items-start gap-2 border-b border-gray-50 pb-2"><span>✔</span> <span>Power Query ETL:
+                    Extract & Transform</span></li>
+                <li class="flex items-start gap-2"><span>✔</span> <span>Scalable Connection: Handles Large Data</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
